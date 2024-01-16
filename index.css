@@ -6,6 +6,10 @@
 }
 
 
+
+
+/* banner-container */
+
 .banner-container {
     background-image: url('Images/Group\ 13\ \(1\)\ \(1\).png');
     height: 400px;
@@ -23,5 +27,41 @@
     height: 52px;
     border-radius: 8px;
     background: #FFF;
-padding: 25px;
+    padding: 25px;
 }
+
+
+
+
+/* popular-tours-section */
+
+.popular-tours-section {
+    height: 300px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+
+
+}
+
+@media screen {
+    
+}
+
+@media  (min-width: 600px) { 
+    .populartours-section {
+        height: 300px;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 100px;
+        padding: 10px;
+        display: flex;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+ }
+
