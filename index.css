@@ -29,21 +29,28 @@ body {
 } */
 
 
+/* prent-container */
+.prent-container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+
 /* banner-container */
 
 .banner-container {
     background-image: url('Images/Group\ 13\ \(1\)\ \(1\).png');
     background-color: rgb(243, 247, 243);
-    text-align: center;
+
     background-repeat: no-repeat;
     height: 400px;
-    width: 80%;
-    margin: 0 auto;
+
+
     margin-top: 20px;
     padding: 50px;
     text-align: center;
     justify-content: center;
-    object-fit: cover;
+    /* object-fit: cover; */
 
 }
 
@@ -56,27 +63,30 @@ body {
 }
 
 
-
+@media only screen and (max-width: 600px) {
+    .banner-container {
+        height: 600px;
+    }
+}
 
 /* popular-tours-section */
 
 .popular-tours-section {
-    height: 400px;
+    height: 500px;
     border: 2px solid green;
-    width: 80%;
-    margin: 0 auto;
+
+
     margin-top: 100px;
     margin-bottom: 300px;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+
     gap: 20px;
 
 
 }
 
-.popular-tours-section>div {
-    border: 2px solid rgb(9, 9, 235);
+.popular-tours-section div {
     width: 50%;
 }
 
@@ -90,9 +100,9 @@ body {
 
 @media only screen and (max-width: 600px) {
     .popular-tours-section {
-        height: 600px;
+        height: 800px;
         /* width: 80%; */
-        margin: 0 auto;
+
         margin-top: 100px;
         margin-bottom: 100px;
         padding: 10px;
@@ -105,9 +115,10 @@ body {
         flex-direction: column;
     }
 
-    .popular-tours-section>div {
-        border: 2px solid rgb(235, 9, 111);
-        /* width: 50%; */
+    .popular-tours-section div {
+
+        /* border: 2px solid rgb(235, 9, 111); */
+        width: 100%;
     }
 
     /* .popular-tours-section > div {
@@ -117,6 +128,7 @@ body {
     .popular-tours-section>img {
         border: 2px solid rgb(210, 27, 125);
         height: 100%;
+        width: 100%;
         object-fit: cover;
     }
 
@@ -132,7 +144,7 @@ body {
 /* grid-layout-section */
 
 .grid-layout-section {
-    width: 80%;
+
     display: grid;
     margin-top: 200px;
     /* margin: 20px; */
@@ -142,16 +154,17 @@ body {
     margin: 0 auto;
 }
 
-
+.grid-layout-section div {
+    width: 10;
+}
 
 .box {
     background-color: gray;
 }
 
-.box h1 {
-    justify-content: center;
-    align-items: center;
-    text-color: white;
+.box {
+
+    padding: 100px;
 
 
 }
@@ -230,15 +243,32 @@ body {
 
 }
 
+@media only screen and (max-width: 600px) {
+    .grid-layout-section {
+        display: flex;
+        flex-direction: column;
+        /* display: grid;
+        grid-template-columns: 500px;
+        grid-template-rows: 300px; */
+
+    }
+
+    .box {
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+}
+
 
 /* discount-section */
+
 .discount-section {
 
-    width: 80%;
+
     display: grid;
-    grid-template-columns: repeat(2 ,1fr);
+    grid-template-columns: repeat(2, 1fr);
     height: 400px;
-    margin: 0 auto;
+
     margin-top: 100px;
     margin-bottom: 100px;
 
@@ -253,7 +283,7 @@ body {
 
 
 discount-content {
-    
+
     padding: 50px;
 
 }
@@ -261,70 +291,37 @@ discount-content {
 .discount-section img {
     width: 100%;
 }
+
 .discount-section input {
-display: block;
-margin-bottom: 20px;
+    display: block;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 600px) {
     .discount-section {
 
-   
-    width: 350px;;
-    display: grid;
-    grid-template-columns: repeat(1 ,1fr);
-    /* height: 400px; */
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        /* display: grid;
+        grid-template-columns: repeat(1, 1fr); */
+        margin-top: 100px;
+        margin-bottom: 150px;
+
     }
 
     .discount-section div {
         border: 2px solid green;
         width: 100%;
-       ;
-    
+
     }
+
     .discount-section img {
         width: 100%;
+        height: 100%;
     }
 
 }
-/* 
-
-@media (max-width: 600px) {
-    .discount-section {
-
-        
-    
-    }
-
-    
-.discount-section div {
-    border: 2px solid green;
-    width: 100%;
-    padding: 50px;
-
-}
-
-
-discount-content {
-    
-    padding: 50px;
-
-}
-
-.discount-section img {
-    width: 100%;
-}
-.discount-section input {
-display: block;
-margin-bottom: 20px;
-}
-
-} */
-
 
 /* discount-section */
 /* footer footer */
@@ -354,9 +351,10 @@ footer {
 }
 
 @media (max-width: 600px) {
-    footer{
+    footer {
         margin-top: 100px;
     }
+
     .social-icons {
         flex-direction: column;
         /* Stack social icons vertically on small screens */
